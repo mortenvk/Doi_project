@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% for dest in destinations %} 
+        <h2>{{dest.location }}</h2>
+        <p>Average cost is {{dest.price}}</p>
+    {% endfor %}
+{% endblock content %}
