@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>
+All of the countries available to visit through Getaway: </h1>
+<body>
+
+    {% for cont in Conts %}
+        
+    <h4>{{cont[0]}}: </h4>
+    {{cont[0]}} {{cont[2]}} hot weather and a 7-day accommodation costs: {{cont[3]}}  <br>
+{%endfor %}
+</body>
+{% endblock content %}

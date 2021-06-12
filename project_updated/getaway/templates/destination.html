@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+<h1>
+    These are your recommended destinations:
+</h1>
+<body>
+    These are the destinations we recommend based on your travel preferences: 
+</body>
+    {% for dest in destinations %} 
+        <h3>{{dest[0] }}</h3>
+        <p>The Hotel cost for a week in {{dest[0] }} lies at {{dest[3]}}, while an average plane ticket costs: {{dest[5]}}, train ticket costs: {{dest[6]}} and a boat ticket costs: {{dest[7]}}
+    {% endfor %}
+
+</div>
+<div class="col-md-4">
+    <div class="content-section">
+    <h3>Would you like to browse on your own?</h3>
+    <p class='text-muted'>Take a look at all the travels we offer below:
+        <ul class="list-group">
+        <a class="nav-item nav-link" href="/browse">Browse</a>
+        </ul>
+    </p>
+    </div>
+</div>                       
+{% endblock content %}
