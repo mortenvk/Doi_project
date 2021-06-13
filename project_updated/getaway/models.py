@@ -70,7 +70,6 @@ def select_Customers(email):
     SELECT * FROM Customers
     WHERE email = %s
     """
-    print('select_customer')
     cur.execute(sql, (email,))
     user = Customers(cur.fetchone()) if cur.rowcount > 0 else None
     cur.close()
