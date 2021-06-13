@@ -59,8 +59,4 @@ def account():
 
 @Customer.route("/About", methods=['GET', 'POST'])
 def About():
-    if not current_user.is_authenticated:
-        flash('Please Login.','danger')
-        return redirect(url_for('Login.login'))
-
     return render_template('about.html', title = 'About')
