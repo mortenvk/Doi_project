@@ -31,13 +31,6 @@ CREATE table if not exists COUNTRIES
 ;
 
 
-CREATE TABLE IF NOT EXISTS CONTINENTS
-	(
-		contID INTEGER NOT NULL PRIMARY KEY,
-        contName VARCHAR(25) NOT NULL
-    )
-;
-
 
 CREATE TABLE IF NOT EXISTS TRANSPORTATION
 	(
@@ -50,30 +43,25 @@ CREATE TABLE IF NOT EXISTS TRANSPORTATION
     )
 ;
 
-INSERT INTO CONTINENTS (contID, contName) VALUES (1, 'AFRICA'), (2, 'EUROPE'), (3, 'ASIA'), (4, 'SOUTH AMERICA'), 
-(5, 'NORTH AMERICA'), 
-(6, 'AUSTRALIA'), 
-(7, 'ANTARCTICA')
-;
 
 
 INSERT INTO COUNTRIES (ctryName, id_cont, hot, price) VALUES 
-	('Italy', 2, True, 3000),
-    ('Greece', 2, True, 2700),
-    ('Spain', 2, True, 2650),
-    ('Portugal', 2, True, 3200),
-    ('Germany', 2, False, 800),
-    ('Romania', 2, False, 1000),
-    ('Croatia', 2, True, 1200),
-    ('United Kingdom', 2, False, 1400),
-    ('Ireland', 2, False, 1300),
-    ('Turkey', 8, True, 2500),
-    ('Russia', 8, False, 4200),
-    ('Holland', 2, False, 2000),
-    ('France', 2, True, 3800),
-    ('Australia', 6, False, 10000), 
-	('Antarktis', 7, False, 20000),
-	('USA', 6, False, 5600) ;
+	('Italy', True, 3000),
+    ('Greece', True, 2700),
+    ('Spain', True, 2650),
+    ('Portugal', True, 3200),
+    ('Germany', False, 800),
+    ('Romania', False, 1000),
+    ('Croatia', True, 1200),
+    ('United Kingdom', False, 1400),
+    ('Ireland', False, 1300),
+    ('Turkey', True, 2500),
+    ('Russia', False, 4200),
+    ('Holland', False, 2000),
+    ('France', True, 3800),
+    ('Australia', False, 10000), 
+	('Antarktis', False, 20000),
+	('USA', False, 5600) ;
 
 INSERT INTO TRANSPORTATION (ctryName,
 		avg_plane_price, 
