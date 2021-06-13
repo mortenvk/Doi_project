@@ -12,11 +12,9 @@ def continents():
         flash('Please Login.','danger')
         return redirect(url_for('Login.login'))
     
-    print(current_user)
     prefs = [current_user.plane_pref, current_user.boat_pref, current_user.train_pref]
     destination = hot_countries(current_user.likes_heat, current_user.budget)
     
-    print(destination)
     return render_template('destination.html', destinations = destination, title='Destination', preferences = prefs)
 
 @Customer.route("/browse", methods=['GET', 'POST'])
@@ -48,7 +46,6 @@ def account():
         flash('Please Login.','danger')
         return redirect(url_for('Login.login'))
     user = current_user
-    print(current_user)
     j = ' '
     for i in range(len(current_user[6])): 
         j = j + '*'
