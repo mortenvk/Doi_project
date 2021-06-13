@@ -7,6 +7,6 @@ How it works:
 - run the command \i schema_ins.sql this will load all the data that we have simulated into your database
 - go back to the project folder and run the command python3 run.py
 - now you should be able to access our project site on localhost (or the link provided in the terminal)
-- have a look around :-)
+- have a look around :-) you could try to sign up and see your recommended destinations...
 
 I sure hope this works 
