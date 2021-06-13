@@ -59,7 +59,3 @@ def logout():
     return redirect(url_for('Login.home'))
 
 
-'''@Login.route("/account")
-@login_required
-def account():
-    return render_template('account.html', title='Account')'''
