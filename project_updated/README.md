@@ -9,4 +9,4 @@ How it works:
 - Now you should be able to access our project site on localhost (the link provided in the terminal)
 - Have a look around :-) you could try to sign up and see your recommended destinations...
 
-I sure hope this works 
+Morten V. K. (zrp776) & Johanne E. W. (fnw311)
